@@ -1,0 +1,5 @@
+baseURL = "/"
+languageCode = "es-es"
+title = "Ya no estoy aquí"
+taxonomies = []
+defaultContentLanguage = "es"
