@@ -1,5 +1,6 @@
-baseURL = "/"
+baseURL = "https://datasketch.github.io/ya-no-estoy-aqui"
 languageCode = "es-es"
 title = "Ya no estoy aquí"
 taxonomies = []
 defaultContentLanguage = "es"
+publishDir = "docs"
