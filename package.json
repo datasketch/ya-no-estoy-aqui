@@ -4,17 +4,16 @@
   "description": "Cuestión Pública",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export -o ./docs/",
-    "start": "next start"
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
   },
   "author": "David Daza <03dazal@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@ddazal/gsheetreader": "^2.0.1",
-    "next": "^10.0.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "@nuxtjs/tailwindcss": "^3.2.0",
+    "nuxt": "^2.14.7",
     "tailwindcss": "^1.9.6"
   },
   "devDependencies": {
