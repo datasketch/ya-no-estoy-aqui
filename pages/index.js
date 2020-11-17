@@ -1,48 +1,13 @@
-import React from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-export async function getStaticProps(context) {
+import victims from '../db.json';
+
+export async function getStaticProps() {
   return {
     props: {
-      victims: [
-        {
-          name: 'Ana Elsy Panesso',
-          slug: 'ana-elsy-panesso',
-        },
-        {
-          name: 'Ana María Correa García',
-          slug: 'ana-maria-correa-garcia',
-        },
-        {
-          name: 'Ana Mercedes Rivas Ramos',
-          slug: 'ana-mercedes-rivas-ramos',
-        },
-        {
-          name: "Inés Acuña Rodríguez, 'La Flaca'",
-          slug: 'ines-acuna-rodriguez',
-        },
-        {
-          name: 'Isabella Hoyos Porras',
-          slug: 'isabella-hoyos-porras',
-        },
-        {
-          name: 'Michel Lara',
-          slug: 'michel-lara',
-        },
-        {
-          name: 'María Alejandra Meriño Escalante',
-          slug: 'maria-alejandra-merino-escalante',
-        },
-        {
-          name: 'Mini Johana Salazar Aguiño',
-          slug: 'mini-johana-salazar-aguiño',
-        },
-        {
-          name: 'Miriam Vargas Castaño',
-          slug: 'miriam-vargas-castano',
-        },
-      ],
+      victims,
     },
   };
 }
@@ -83,12 +48,11 @@ function HomePage({ victims }) {
           <ul className="space-y-2 mt-6 font-playfair text-silver-chalice">
             {victims.map((v) => (
               <li key={v.slug}>
-                <a
-                  href="#"
-                  className="hover:text-sizzling-red focus:text-sizzling-red"
-                >
-                  {v.name}
-                </a>
+                <Link href={v.slug}>
+                  <a className="hover:text-sizzling-red focus:text-sizzling-red">
+                    {v.name}
+                  </a>
+                </Link>
               </li>
             ))}
           </ul>
