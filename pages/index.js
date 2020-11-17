@@ -23,10 +23,10 @@ function HomePage({ victims }) {
       <section className="intro">
         <img
           className="w-40 mx-auto"
-          src="/media/title.png"
+          src="/ya-no-estoy-aqui/media/title.png"
           alt="Ya no estoy aquí"
         />
-        <img className="w-64 mx-auto -mt-6" src="/media/cover.png" alt="" />
+        <img className="w-64 mx-auto -mt-6" src="/ya-no-estoy-aqui/media/cover.png" alt="" />
         <div className="text-center text-xl font-playfair text-wild-blue-yonder font-semibold">
           <p>
             "Soy la mujer que piensa.
