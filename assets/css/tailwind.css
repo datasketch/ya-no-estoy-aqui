@@ -29,11 +29,6 @@
 @tailwind components;
 /* Stop purging. */
 
-.intro {
-  background-image: url(../../static/media/texture_v.jpg);
-  @apply bg-center bg-no-repeat bg-cover px-4 py-12;
-}
-
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */

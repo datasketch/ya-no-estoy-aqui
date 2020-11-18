@@ -1,20 +1,16 @@
 <template>
   <div>
-    <section class="intro">
-      <img class="w-40 mx-auto" src="media/title.png" alt="Ya no estoy aquí" />
-      <img class="w-64 mx-auto -mt-6" src="media/cover.png" alt="" />
-      <div
-        class="text-center text-xl font-playfair text-wild-blue-yonder font-semibold"
-      >
-        <p>
-          "Soy la mujer que piensa.
-          <br />
-          Algún día mis ojos encenderan luciérnagas."
+    <section id="intro" class="px-4 min-h-screen table w-full">
+      <div class="table-cell align-middle">
+        <img class="w-64 mx-auto" src="media/title.png" alt="Ya no estoy aquí" />
+        <!-- <img class="w-64 mx-auto -mt-6" src="media/cover.png" alt="" /> -->
+        <p class="font-playfair font-extrabold text-center text-2xl text-sizzling-red">
+          Perfiles de mujeres asesinadas en pandemia
         </p>
-        <p class="mt-4 italic">Gioconda Belli</p>
+        <img class="mx-auto w-40" src="media/cp-feminista.png" alt="Logo Cuestión Pública Feminista">
       </div>
     </section>
-    <section class="px-4 py-6 shadow-inner">
+    <section class="px-4 py-6">
       <div class="w-10/12 mx-auto">
         <p class="font-playfair">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. In numquam
@@ -54,3 +50,10 @@ export default {
   },
 };
 </script>
+
+<style lang="postcss">
+#intro {
+  @apply bg-center bg-no-repeat bg-contain;
+  background-image: url('~static/media/cover.gif');
+}
+</style>
