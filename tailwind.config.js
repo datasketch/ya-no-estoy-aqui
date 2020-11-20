@@ -9,6 +9,7 @@ module.exports = {
         'sizzling-red': '#ef5d60',
         'wild-blue-yonder': '#a8aace',
         'silver-chalice': '#b2b2b2',
+        'english-violet': '#45364B',
       },
       fontFamily: {
         lato: ['Lato', 'sans-serif'],

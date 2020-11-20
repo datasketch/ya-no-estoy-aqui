@@ -14,6 +14,7 @@
     "@ddazal/gsheetreader": "^2.0.1",
     "@nuxtjs/tailwindcss": "^3.2.0",
     "nuxt": "^2.14.7",
+    "scrollama": "^2.2.1",
     "tailwindcss": "^1.9.6"
   },
   "devDependencies": {
