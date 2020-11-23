@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/isabella-hoyos-porras", {data:[{}],fetch:[],mutations:void 0});

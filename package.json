@@ -11,7 +11,7 @@
   "author": "David Daza <03dazal@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@ddazal/gsheetreader": "^2.0.1",
+    "@ddazal/gsheetreader": "^2.1.0",
     "@nuxtjs/tailwindcss": "^3.2.0",
     "nuxt": "^2.14.7",
     "scrollama": "^2.2.1",
