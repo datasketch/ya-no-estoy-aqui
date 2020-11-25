@@ -11,10 +11,12 @@
   "author": "David Daza <03dazal@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@ddazal/gsheetreader": "^2.1.0",
+    "@ddazal/gsheetreader": "^2.2.0",
     "@nuxtjs/tailwindcss": "^3.2.0",
+    "axios": "^0.21.0",
     "nuxt": "^2.14.7",
     "scrollama": "^2.2.1",
+    "slugify": "^1.4.6",
     "tailwindcss": "^1.9.6"
   },
   "devDependencies": {

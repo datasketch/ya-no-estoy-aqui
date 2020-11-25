@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/miriam-vargas-castano", {data:[{}],fetch:[],mutations:void 0});

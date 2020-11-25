@@ -68,10 +68,10 @@
           <li v-for="v in victims" :key="v.slug">
             <nuxt-link
               :to="`/${v.slug}`"
-              :title="v.name"
+              :title="v.fullname"
               class="hover:text-sizzling-red focus:text-sizzling-red"
             >
-              {{ v.name }}
+              {{ v.fullname }} - {{ v["Edad"] }} años
             </nuxt-link>
           </li>
         </ul>
@@ -82,7 +82,8 @@
 
 <script>
 import scrollama from "scrollama";
-import victims from "~/db";
+import slugify from "slugify";
+import { getData } from "~/api";
 
 export default {
   head() {
@@ -90,7 +91,11 @@ export default {
       title: "Ya no estoy aquí",
     };
   },
-  data() {
+  async asyncData() {
+    const { victims, error } = await getData();
+    if (error !== null) {
+      console.log(error);
+    }
     return {
       victims,
     };

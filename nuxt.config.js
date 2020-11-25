@@ -1,3 +1,5 @@
+import { getData } from './api';
+
 export default {
   head: {
     titleTemplate: '%s · Cuestión Pública',
@@ -16,6 +18,10 @@ export default {
   buildModules: ['@nuxtjs/tailwindcss'],
   generate: {
     dir: 'docs',
+    async routes() {
+      const { victims } = await getData();
+      return victims.map((v) => `/${v.slug}`);
+    },
   },
   target: 'static',
   ssr: true,

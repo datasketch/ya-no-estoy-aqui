@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/alba-lucia-caro-bedoya", {data:[{}],fetch:[],mutations:void 0});

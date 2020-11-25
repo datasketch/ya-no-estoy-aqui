@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/michel-yulieth-lara-garcia", {data:[{}],fetch:[],mutations:void 0});

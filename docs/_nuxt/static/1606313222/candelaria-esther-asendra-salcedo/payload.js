@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/candelaria-esther-asendra-salcedo", {data:[{}],fetch:[],mutations:void 0});
