@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/cindy-vanesa-pina-oyola", {data:[{}],fetch:[],mutations:void 0});
