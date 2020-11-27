@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/katy-johana-ariza-macias", {data:[{}],fetch:[],mutations:void 0});

@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/luz-amparo-garcia-alvarez", {data:[{}],fetch:[],mutations:void 0});

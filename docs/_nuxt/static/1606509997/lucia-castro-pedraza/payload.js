@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/lucia-castro-pedraza", {data:[{}],fetch:[],mutations:void 0});

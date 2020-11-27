@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="px-4 sm:px-8">
     <Nuxt />
     <VFooter />
   </div>
@@ -17,5 +17,14 @@ export default {
 body {
   @apply bg-cover bg-center bg-fixed;
   background-image: url("~static/media/texture.jpg");
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
 }
 </style>

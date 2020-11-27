@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/daniela-alexandra-quinones-pimienta", {data:[{}],fetch:[],mutations:void 0});
