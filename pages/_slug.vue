@@ -90,6 +90,36 @@
         </button>
       </div>
     </div>
+    <div class="w-2/3 border-t border-black mx-auto my-12 border-opacity-25"></div>
+    <div class="flex justify-center space-x-8 items-end">
+      <div class="flex flex-col">
+        <div class="w-20 h-20 bg-gray-400 rounded-full mx-auto"></div>
+        <p class="font-playfair text-center leading-tight mt-2">
+          <span class="block">{{ previousVictim.Nombre }}</span>
+          <span>{{ previousVictim.Apellidos }}</span>
+        </p>
+        <nuxt-link :to="`/${previousVictim.slug}`" class="mt-3 flex items-center font-lato font-bold text-wild-blue-yonder text-sm">
+          <img class="w-10" src="media/previous.png" alt="Anterior">
+          <span>Anterior</span>
+        </nuxt-link>
+      </div>
+      <div>
+        <nuxt-link to="/">
+          <img src="media/home.png" alt="">
+        </nuxt-link>
+      </div>
+      <div class="flex flex-col">
+        <div class="w-20 h-20 bg-gray-400 rounded-full mx-auto"></div>
+        <p class="font-playfair text-center leading-tight mt-2">
+          <span class="block">{{ nextVictim.Nombre }}</span>
+          <span>{{ nextVictim.Apellidos }}</span>
+        </p>
+        <nuxt-link :to="`/${nextVictim.slug}`" class="mt-3 flex items-center font-lato font-bold text-sizzling-red text-sm">
+          <span>Siguiente</span>
+          <img class="w-10" src="media/next.png" alt="Anterior">
+        </nuxt-link>
+      </div>
+    </div>
   </div>
 </template>
 
