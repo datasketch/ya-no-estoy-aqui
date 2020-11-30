@@ -62,21 +62,11 @@
       >
         <button
           @click="togglePlay"
-          class="focus:outline-none"
+          class="focus:outline-none w-16"
           :title="paused ? 'Reproducir audio' : 'Pausar audio'"
         >
-          <img
-            v-show="paused"
-            class="w-16"
-            src="media/play.png"
-            alt="Reproducir"
-          />
-          <img
-            v-show="!paused"
-            class="w-16"
-            src="media/pause.png"
-            alt="Pausar"
-          />
+          <img v-show="paused" src="media/play.png" alt="Reproducir" />
+          <img v-show="!paused" src="media/pause.png" alt="Pausar" />
         </button>
         <div class="font-lato leading-tight px-2">
           <p class="text-wild-blue-yonder">
@@ -88,18 +78,12 @@
         </div>
         <button
           @click="toggleSound"
-          class="focus:outline-none"
+          class="focus:outline-none w-10"
           :title="muted ? 'Activar sonido' : 'Desactivar sonido'"
         >
-          <img
-            v-show="!muted"
-            class="w-10"
-            src="media/sound-on.png"
-            alt="Volumen activo"
-          />
+          <img v-show="!muted" src="media/sound-on.png" alt="Volumen activo" />
           <img
             v-show="muted"
-            class="w-10"
             src="media/sound-off.png"
             alt="Volumen no activo"
           />
