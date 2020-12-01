@@ -1,36 +1,5 @@
 @tailwind base;
 
-@font-face {
-  font-family: Lato;
-  font-weight: 600;
-  src: url(~assets/fonts/Lato-Semibold.ttf);
-}
-
-@font-face {
-  font-family: Lato;
-  font-weight: 600;
-  font-style: italic;
-  src: url(~assets/fonts/Lato-SemiboldItalic.ttf);
-}
-
-@font-face {
-  font-family: Lato;
-  font-weight: 900;
-  src: url(~assets/fonts/Lato-Black.ttf);
-}
-
-@font-face {
-  font-family: "Playfair Display";
-  font-weight: 800;
-  src: url(~assets/fonts/PlayfairDisplay-ExtraBold.ttf);
-}
-
-@font-face {
-  font-family: Charter;
-  font-weight: 400;
-  src: url(~assets/fonts/Charter.ttf);
-}
-
 /* Start purging... */
 @tailwind components;
 /* Stop purging. */
@@ -38,3 +7,43 @@
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */
+
+@layer base {
+  @font-face {
+    font-family: Lato;
+    font-weight: 600;
+    src: url(~assets/fonts/Lato-Semibold.ttf);
+  }
+
+  @font-face {
+    font-family: Lato;
+    font-weight: 600;
+    font-style: italic;
+    src: url(~assets/fonts/Lato-SemiboldItalic.ttf);
+  }
+
+  @font-face {
+    font-family: Lato;
+    font-weight: 900;
+    src: url(~assets/fonts/Lato-Black.ttf);
+  }
+
+  @font-face {
+    font-family: 'Playfair Display';
+    font-weight: 800;
+    src: url(~assets/fonts/PlayfairDisplay-ExtraBold.ttf);
+  }
+
+  @font-face {
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    font-style: italic;
+    src: url(~assets/fonts/PlayfairDisplay-MediumItalic.ttf);
+  }
+
+  @font-face {
+    font-family: Charter;
+    font-weight: 400;
+    src: url(~assets/fonts/Charter.ttf);
+  }
+}

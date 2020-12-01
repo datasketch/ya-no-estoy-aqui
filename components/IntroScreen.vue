@@ -12,11 +12,14 @@
         class="min-h-screen flex flex-col justify-center"
         style="margin-bottom: 50vh"
       >
-        <img
-          class="w-2/3 md:w-1/4 mx-auto"
-          src="media/title.png"
-          alt="Ya no estoy aquí"
-        />
+        <h1 class="text-8xl text-maximum-purple font-playfair leading-none text-center" style="color: #6c3d7e">
+          <span class="italic inline-flex relative">
+            Ya no
+            <span class="absolute w-full h-1 bg-red-500 bg-opacity-50 transform translate-y-1/2 top-1/2"></span>
+          </span>
+          <span class="block text-sizzling-red text-opacity-75">estoy</span>
+          <span class="block text-sizzling-red text-opacity-75">aquí</span>
+        </h1>
       </div>
       <div class="min-h-screen flex flex-col text-center justify-center pb-12">
         <h1

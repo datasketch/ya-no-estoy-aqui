@@ -32,26 +32,13 @@
         <span>{{ victim.Apellidos }}</span>
       </h1>
     </div>
-    <div class="font-charter mt-12 space-y-6">
-      <h2 class="font-playfair text-2xl">Carta de la madre</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem
-        laborum voluptate ullam facere illum voluptatum provident, qui repellat!
-        Quaerat obcaecati dolorum quia! Cum sed corporis unde ipsam, labore odio
-        architecto?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque esse
-        minima fuga. Minus ducimus dolorum numquam mollitia delectus ad debitis,
-        repudiandae veritatis assumenda beatae necessitatibus commodi magni
-        iusto vel animi?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, iste
-        molestiae rem voluptatum quisquam beatae explicabo dolor quo iure quis
-        aut in magni, possimus laboriosam natus inventore qui deserunt iusto.
-      </p>
-    </div>
+    <!-- In memoriam -->
+    <div
+      class="md-content"
+      v-html="inMemoriam"
+    ></div>
+    <p class="text-center my-6">* * *</p>
+    <div class="font-charter text-lg" v-html="status"></div>
     <div class="text-center mt-12">
       <div
         id="audio-player"
@@ -90,7 +77,9 @@
         </button>
       </div>
     </div>
-    <div class="w-2/3 border-t border-black mx-auto my-12 border-opacity-25"></div>
+    <div
+      class="w-2/3 border-t border-black mx-auto my-12 border-opacity-25"
+    ></div>
     <div class="flex justify-center space-x-8 items-end">
       <div class="flex flex-col">
         <div class="w-20 h-20 bg-gray-400 rounded-full mx-auto"></div>
@@ -98,14 +87,17 @@
           <span class="block">{{ previousVictim.Nombre }}</span>
           <span>{{ previousVictim.Apellidos }}</span>
         </p>
-        <nuxt-link :to="`/${previousVictim.slug}`" class="mt-3 flex items-center font-lato font-bold text-wild-blue-yonder text-sm">
-          <img class="w-10" src="media/previous.png" alt="Anterior">
+        <nuxt-link
+          :to="`/${previousVictim.slug}`"
+          class="mt-3 flex items-center font-lato font-bold text-wild-blue-yonder text-sm"
+        >
+          <img class="w-10" src="media/previous.png" alt="Anterior" />
           <span>Anterior</span>
         </nuxt-link>
       </div>
       <div>
         <nuxt-link to="/">
-          <img src="media/home.png" alt="">
+          <img src="media/home.png" alt="" />
         </nuxt-link>
       </div>
       <div class="flex flex-col">
@@ -114,9 +106,12 @@
           <span class="block">{{ nextVictim.Nombre }}</span>
           <span>{{ nextVictim.Apellidos }}</span>
         </p>
-        <nuxt-link :to="`/${nextVictim.slug}`" class="mt-3 flex items-center font-lato font-bold text-sizzling-red text-sm">
+        <nuxt-link
+          :to="`/${nextVictim.slug}`"
+          class="mt-3 flex items-center font-lato font-bold text-sizzling-red text-sm"
+        >
           <span>Siguiente</span>
-          <img class="w-10" src="media/next.png" alt="Anterior">
+          <img class="w-10" src="media/next.png" alt="Anterior" />
         </nuxt-link>
       </div>
     </div>
@@ -124,6 +119,7 @@
 </template>
 
 <script>
+import MarkdownIt from "markdown-it";
 import { getData } from "~/api";
 
 export default {
@@ -154,7 +150,14 @@ export default {
       player: null,
       paused: true,
       muted: false,
+      status: "",
+      inMemoriam: "",
     };
+  },
+  created() {
+    const md = new MarkdownIt();
+    this.inMemoriam = md.render(this.victim.texto_in_memoriam);
+    this.status = md.render(this.victim.estado_proceso);
   },
   mounted() {
     this.player = new Audio("media/audio.mp3");
@@ -187,5 +190,29 @@ export default {
   left: 2rem;
   right: 1.25rem;
   z-index: -1;
+}
+
+.md-content {
+  @apply text-lg font-charter mt-12;
+}
+
+.md-content a {
+  @apply underline;
+}
+
+.md-content strong {
+  @apply font-bold
+}
+
+.md-content blockquote {
+  @apply text-right;
+}
+
+.md-content h2 {
+  @apply font-playfair text-2xl text-center my-10;
+}
+
+.md-content h2 ~ * {
+  @apply mt-6;
 }
 </style>

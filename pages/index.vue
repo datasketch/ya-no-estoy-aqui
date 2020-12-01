@@ -53,7 +53,6 @@ export default {
       const children = Array.from(this.$refs.victims.children);
       children.forEach((child) => child.classList.add("faded"));
       children[index].classList.remove("faded");
-      // this.hoveredItem = victim;
     },
     onMouseLeave() {
       const children = Array.from(this.$refs.victims.children);
