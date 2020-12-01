@@ -19,7 +19,6 @@ export default {
     ],
   },
   router: {
-    base: '/ya-no-estoy-aqui/',
     prefetchLinks: false,
   },
   buildModules: ['@nuxtjs/tailwindcss' /* '@nuxtjs/google-analytics' */],
