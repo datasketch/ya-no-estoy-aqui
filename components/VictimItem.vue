@@ -1,8 +1,8 @@
 <template>
   <li
     class="leading-tight list-item"
-    @mouseenter="$emit('item-hovered')"
-    @mouseleave="$emit('item-leave')"
+    @mouseenter="$emit('enter')"
+    @mouseleave="$emit('leave')"
   >
     <nuxt-link :to="`/${victim.slug}`" :title="victim.fullname" class="block">
       <span class="block text-white">{{ victim.fullname }}</span>

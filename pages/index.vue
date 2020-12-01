@@ -1,5 +1,12 @@
 <template>
   <div>
+    <transition name="photo">
+      <div
+        v-show="hovered"
+        class="fixed top-0 left-0 w-full h-full bg-center bg-contain bg-repeat-x"
+        :style="overlay"
+      ></div>
+    </transition>
     <IntroScreen />
     <section class="px-4 pb-6">
       <div class="max-w-lg mx-auto">
@@ -13,13 +20,16 @@
             <p class="text-sizzling-red text-opacity-75 -mt-3">20</p>
           </div>
         </div>
-        <ul class="space-y-12 mt-12 font-playfair text-2xl" ref="victims">
+        <ul
+          class="flex flex-col items-start space-y-16 mt-12 font-playfair text-xl lg:text-2xl"
+          ref="victims"
+        >
           <VictimItem
             v-for="(victim, i) in victims"
             :key="victim.slug"
             :victim="victim"
-            @item-hovered="onMouseEnter(victim, i)"
-            @item-leave="onMouseLeave(i)"
+            @enter="onEnter(victim, i)"
+            @leave="onLeave(i)"
           />
         </ul>
       </div>
@@ -48,16 +58,51 @@ export default {
       victims,
     };
   },
+  data() {
+    return {
+      hovered: null,
+    };
+  },
+  computed: {
+    overlay() {
+      return {
+        zIndex: -1,
+        backgroundImage: `radial-gradient(circle, rgba(0,0,0,0.6530987394957983) 0%, rgba(0,0,0,0.5550595238095238) 44%), url(media/daniela.jpg)`,
+      };
+    },
+  },
   methods: {
-    onMouseEnter(victim, index) {
+    onEnter(victim, index) {
       const children = Array.from(this.$refs.victims.children);
       children.forEach((child) => child.classList.add("faded"));
       children[index].classList.remove("faded");
+      this.hovered = victim;
     },
-    onMouseLeave() {
+    onLeave() {
       const children = Array.from(this.$refs.victims.children);
       children.forEach((child) => child.classList.remove("faded"));
+      this.hovered = null;
     },
   },
 };
 </script>
+
+<style>
+.photo-enter-to,
+.photo-leave {
+  opacity: 1;
+}
+
+.photo-enter,
+.photo-leave-to {
+  opacity: 0;
+}
+
+.photo-enter-active {
+  transition: opacity 0.5s ease-out;
+}
+
+.photo-leave-active {
+  transition: opacity 0.25s ease-in;
+}
+</style>
