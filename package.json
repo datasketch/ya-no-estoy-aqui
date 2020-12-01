@@ -20,6 +20,7 @@
     "tailwindcss": "^1.9.6"
   },
   "devDependencies": {
+    "@nuxtjs/google-analytics": "^2.4.0",
     "postcss": "^8.1.7",
     "postcss-cli": "^8.2.0"
   }
