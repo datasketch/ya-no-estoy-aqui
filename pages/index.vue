@@ -11,15 +11,15 @@
         <div class="flex flex-col items-center">
           <div class="h-16 border-sizzling-red border-r w-0"></div>
           <div class="leading-none text-center font-playfair text-5xl">
-            <p class="text-sizzling-red text-opacity-50">20</p>
+            <p class="text-sizzling-red text-opacity-75">20</p>
             <p class="text-sizzling-red font-lato text-sm font-black">
               Perfiles
             </p>
-            <p class="text-sizzling-red text-opacity-50 -mt-3">20</p>
+            <p class="text-sizzling-red text-opacity-75 -mt-3">20</p>
           </div>
         </div>
         <ul
-          class="space-y-12 mt-12 font-playfair text-english-violet text-2xl"
+          class="space-y-12 mt-12 font-playfair text-2xl"
           ref="victims"
         >
           <VictimItem

@@ -20,9 +20,9 @@
       </div>
       <div class="min-h-screen flex flex-col text-center justify-center pb-12">
         <h1
-          class="text-4xl lg:text-5xl font-playfair font-extrabold leading-tight text-english-violet"
+          class="text-4xl lg:text-5xl font-playfair font-extrabold leading-tight text-platinum"
         >
-          Perfiles de <br />
+          In memoriam de <br />
           mujeres asesinadas <br />
           en pandemia
         </h1>
@@ -32,10 +32,10 @@
           alt="Logo Cuestión Pública Feminista"
         />
         <div
-          class="w-1/2 border-t border-black mx-auto my-12 border-opacity-25"
+          class="w-1/2 border-t-2 border-platinum mx-auto my-12 border-opacity-25"
         ></div>
         <div class="max-w-lg mx-auto">
-          <p class="font-charter text-english-violet text-base lg:text-lg">
+          <p class="font-charter text-platinum text-base lg:text-lg">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. In numquam
             sint officiis suscipit mollitia veniam alias consequatur explicabo
             maxime molestias consectetur ad, deserunt magnam, reprehenderit
