@@ -5,8 +5,8 @@
     @mouseleave="$emit('item-leave')"
   >
     <nuxt-link :to="`/${victim.slug}`" :title="victim.fullname" class="block">
-      <span class="block">{{ victim.fullname }}</span>
-      <span class="text-english-violet text-opacity-75"
+      <span class="block text-white">{{ victim.fullname }}</span>
+      <span class="text-platinum text-opacity-75"
         >{{ victim["Edad"] }} años</span
       >
     </nuxt-link>

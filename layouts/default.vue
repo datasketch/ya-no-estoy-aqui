@@ -15,8 +15,11 @@ export default {
 
 <style lang="postcss">
 body {
-  @apply bg-cover bg-center bg-fixed;
-  background-image: url("~static/media/texture.jpg");
+ background: rgb(69,54,75);
+background: linear-gradient(180deg, rgba(69,54,75,0.9093837364047181) 50%, rgba(0,0,0,0.8729691705783876) 100%); 
+  /* @apply bg-english-violet; */
+  /* @apply bg-cover bg-center bg-fixed;
+  background-image: url("~static/media/texture.jpg"); */
 }
 
 .page-enter-active,
