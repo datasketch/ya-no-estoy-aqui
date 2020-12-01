@@ -1,7 +1,7 @@
 <template>
-  <div class="w-full mx-auto sm:max-w-lg text-english-violet">
+  <div class="w-full mx-auto sm:max-w-lg text-platinum">
     <nav class="pt-2">
-      <nuxt-link to="/" class="flex items-center text-silver-chalice text-sm">
+      <nuxt-link to="/" class="flex items-center text-sm">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="w-6 stroke-current"

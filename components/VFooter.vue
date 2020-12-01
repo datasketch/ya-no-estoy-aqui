@@ -1,7 +1,7 @@
 <template>
   <footer class="px-4 mt-12 pb-4">
     <div class="text-center space-y-4">
-      <p class="font-lato text-xl text-wild-blue-yonder">Comparte</p>
+      <p class="font-lato text-xl text-platinum">Comparte</p>
       <ul class="flex items-center justify-center space-x-6">
         <li>
           <a href="" target="_blank" rel="noopener noreferrer">
