@@ -17,7 +17,7 @@
       <div class="max-w-lg mx-auto">
         <div class="flex flex-col items-center">
           <div class="h-16 border-sizzling-red border-r w-0"></div>
-          <div class="leading-none text-center font-playfair text-5xl">
+          <div class="leading-none text-center font-playfair text-5xl font-extrabold">
             <p class="text-sizzling-red text-opacity-75">20</p>
             <p class="text-sizzling-red font-lato text-sm font-black">
               Perfiles
@@ -41,7 +41,7 @@
     </section>
     <div class="flex flex-col items-center text-platinum font-lato mt-12">
       <div class="h-16 border-sizzling-red border-r w-0"></div>
-      <div class="leading-none text-center font-playfair text-4xl mt-4">
+      <div class="leading-none text-center font-playfair text-4xl mt-4 font-medium">
         <p class="text-sizzling-red text-opacity-75">Créditos</p>
       </div>
       <div class="space-y-6 mt-8">

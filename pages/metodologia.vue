@@ -1,7 +1,7 @@
 <template>
   <div class="w-full mx-auto sm:max-w-xl text-platinum">
     <nav class="pt-2">
-      <nuxt-link to="/" class="flex items-center text-sm">
+      <nuxt-link to="/" class="flex items-center text-sm font-playfair">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="w-6 stroke-current"
@@ -19,8 +19,8 @@
         <span>Volver al inicio</span>
       </nuxt-link>
     </nav>
-    <div class="mt-12 text-lg font-charter space-y-6">
-      <h2 class="font-playfair text-3xl text-center my-10 text-sizzling-red">Metodología <span class="line-through italic">Ya</span> no estoy aquí</h2>
+    <div class="mt-12 text-lg font-charter space-y-6 md:text-xl">
+      <h2 class="font-playfair text-3xl text-center my-10 text-sizzling-red md:text-4xl">Metodología <span class="line-through italic">Ya</span> no estoy aquí</h2>
       <p>
         Partimos de la construcción de una base de datos de víctimas de violencia feminicida, que comprende desde el 24 de marzo hasta el 31 de agosto, meses en los que la cuarentena por COVID-19 fueron más estrictos en el país, de acuerdo con los decretos de emergencia que obligaron a toda la población a estar aislada obligatoriamente. 
       </p>

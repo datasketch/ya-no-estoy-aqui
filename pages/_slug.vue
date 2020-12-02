@@ -19,7 +19,7 @@
         <span>Volver al inicio</span>
       </nuxt-link>
     </nav> -->
-    <img :src="victim.enlace_imagen" class="w-56 mt-12" alt="">
+    <img :src="victim.enlace_imagen" class="w-full md:w-56 mt-12 mx-auto" alt="">
     <div class="text-sizzling-red flex flex-col items-start relative mt-12">
       <p class="font-lato text-xl">{{ victim.Edad }} años</p>
       <img
@@ -28,7 +28,7 @@
         style="top: 1rem; z-index: -1"
       />
       <div class="w-8 border-b border-sizzling-red"></div>
-      <h1 class="text-3xl md:text-5xl leading-tight font-playfair mt-2">
+      <h1 class="text-3xl md:text-5xl leading-tight font-playfair mt-2 font-extrabold">
         <span class="block">{{ victim.Nombre }}</span>
         <span>{{ victim.Apellidos }}</span>
       </h1>
@@ -88,7 +88,7 @@
           :src="previousVictim.enlace_imagen"
           alt=""
         />
-        <p class="font-playfair text-center leading-tight mt-2">
+        <p class="font-playfair text-center leading-tight mt-2 font-medium">
           <span class="block">{{ previousVictim.Nombre }}</span>
           <span>{{ previousVictim.Apellidos }}</span>
         </p>
@@ -109,7 +109,7 @@
           :src="nextVictim.enlace_imagen"
           alt=""
         />
-        <p class="font-playfair text-center leading-tight mt-2">
+        <p class="font-playfair text-center leading-tight mt-2 font-medium">
           <span class="block">{{ nextVictim.Nombre }}</span>
           <span>{{ nextVictim.Apellidos }}</span>
         </p>
@@ -222,5 +222,11 @@ export default {
 
 .md-content h3 {
   @apply font-playfair text-xl font-bold;
+}
+
+@screen md {
+  .md-content {
+    @apply text-xl;
+  }
 }
 </style>

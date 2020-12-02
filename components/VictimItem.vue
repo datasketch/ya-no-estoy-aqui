@@ -4,7 +4,7 @@
     @mouseenter="$emit('enter')"
     @mouseleave="$emit('leave')"
   >
-    <nuxt-link :to="`/${victim.slug}`" :title="victim.fullname" class="block">
+    <nuxt-link :to="`/${victim.slug}`" :title="victim.fullname" class="block font-extrabold">
       <span class="block text-white">{{ victim.fullname }}</span>
       <span class="text-platinum text-opacity-75"
         >{{ victim["Edad"] }} años</span

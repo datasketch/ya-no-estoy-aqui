@@ -30,8 +30,20 @@
 
   @font-face {
     font-family: 'Playfair Display';
+    font-weight: 400;
+    src: url(~assets/fonts/PlayfairDisplay-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: 'Playfair Display';
     font-weight: 800;
     src: url(~assets/fonts/PlayfairDisplay-ExtraBold.ttf);
+  }
+
+  @font-face {
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    src: url(~assets/fonts/PlayfairDisplay-Medium.ttf);
   }
 
   @font-face {
