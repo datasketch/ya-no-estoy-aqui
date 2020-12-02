@@ -15,7 +15,7 @@
         <h1 class="text-8xl text-purple font-playfair leading-none text-center" style="color: #6c3d7e">
           <span class="italic inline-flex relative">
             Ya no
-            <span class="absolute w-full h-1 bg-red-500 bg-opacity-50 transform translate-y-1/2 top-1/2"></span>
+            <span class="absolute w-full h-2 bg-red-500 bg-opacity-50 transform translate-y-1/2 top-1/2"></span>
           </span>
           <span class="block text-sizzling-red text-opacity-75">estoy</span>
           <span class="block text-sizzling-red text-opacity-75">aquí</span>
@@ -23,11 +23,10 @@
       </div>
       <div class="min-h-screen flex flex-col justify-center pb-12">
         <h1
-          class="text-3xl md:text-4xl lg:text-5xl font-playfair font-extrabold leading-tight text-platinum text-center"
+          class="text-3xl md:text-4xl lg:text-5xl font-playfair font-extrabold leading-tight text-platinum text-center max-w-2xl mx-auto"
         >
-          In memoriam <br />
-          de mujeres asesinadas <br />
-          en pandemia
+          <span class="italic font-playfair">In memoriam</span> <br />
+          mujeres víctimas de violencia feminicida en pandemia
         </h1>
         <img
           class="mx-auto w-40 lg:w-40 mt-12"
@@ -83,7 +82,7 @@ export default {
         step: ".step",
       })
       .onStepProgress(({ progress }) => {
-        this.$refs.wrapper.style.opacity = 1 - progress * 2.5;
+        this.$refs.wrapper.style.opacity = 1 - progress * 4;
       });
   },
 };

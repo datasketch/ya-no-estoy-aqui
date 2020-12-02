@@ -39,6 +39,30 @@
         </ul>
       </div>
     </section>
+    <div class="flex flex-col items-center text-platinum font-lato mt-12">
+      <div class="h-16 border-sizzling-red border-r w-0"></div>
+      <div class="leading-none text-center font-playfair text-4xl mt-4">
+        <p class="text-sizzling-red text-opacity-75">Créditos</p>
+      </div>
+      <div class="space-y-6 mt-8">
+        <div class="text-2xl text-center">
+          <h3 class="font-charter text-wild-blue-yonder">Dirección</h3>
+          <p class="text-lg">Diana Salinas</p>
+        </div>
+        <div class="text-2xl text-center">
+          <h3 class="font-charter text-wild-blue-yonder">Coordinación</h3>
+          <p class="text-lg">Nombre Apellido</p>
+        </div>
+        <div class="text-2xl text-center">
+          <h3 class="font-charter text-wild-blue-yonder">Diseño</h3>
+          <p class="text-lg">Heidy González</p>
+        </div>
+        <div class="text-2xl text-center">
+          <h3 class="font-charter text-wild-blue-yonder">Desarrollo web</h3>
+          <p class="text-lg">Datasketch</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 

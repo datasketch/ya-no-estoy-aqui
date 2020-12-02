@@ -1,6 +1,6 @@
 <template>
   <div class="w-full mx-auto sm:max-w-xl text-platinum">
-    <nav class="pt-2">
+    <!-- <nav class="pt-2">
       <nuxt-link to="/" class="flex items-center text-sm">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -18,7 +18,8 @@
         </svg>
         <span>Volver al inicio</span>
       </nuxt-link>
-    </nav>
+    </nav> -->
+    <img :src="victim.enlace_imagen" class="w-56 mt-12" alt="">
     <div class="text-sizzling-red flex flex-col items-start relative mt-12">
       <p class="font-lato text-xl">{{ victim.Edad }} años</p>
       <img
@@ -27,16 +28,13 @@
         style="top: 1rem; z-index: -1"
       />
       <div class="w-8 border-b border-sizzling-red"></div>
-      <h1 class="text-5xl leading-tight font-playfair">
+      <h1 class="text-3xl md:text-5xl leading-tight font-playfair mt-2">
         <span class="block">{{ victim.Nombre }}</span>
         <span>{{ victim.Apellidos }}</span>
       </h1>
     </div>
     <!-- In memoriam -->
-    <div
-      class="md-content"
-      v-html="inMemoriam"
-    ></div>
+    <div class="md-content" v-html="inMemoriam"></div>
     <p class="text-center my-6">* * *</p>
     <div class="font-charter text-lg" v-html="status"></div>
     <div class="text-center mt-12">
@@ -81,39 +79,45 @@
       class="w-2/3 border-t border-black mx-auto my-12 border-opacity-25"
     ></div>
     <div class="flex justify-center space-x-8 items-end">
-      <div class="flex flex-col">
-        <div class="w-20 h-20 bg-gray-400 rounded-full mx-auto"></div>
+      <nuxt-link
+        :to="`/${previousVictim.slug}`"
+        class="mt-3 flex flex-col items-center font-lato font-bold"
+      >
+        <img
+          class="w-20 h-20 rounded-full object-center object-cover"
+          :src="previousVictim.enlace_imagen"
+          alt=""
+        />
         <p class="font-playfair text-center leading-tight mt-2">
           <span class="block">{{ previousVictim.Nombre }}</span>
           <span>{{ previousVictim.Apellidos }}</span>
         </p>
-        <nuxt-link
-          :to="`/${previousVictim.slug}`"
-          class="mt-3 flex items-center font-lato font-bold text-wild-blue-yonder text-sm"
-        >
+        <div class="text-sm flex items-center text-wild-blue-yonder mt-2">
           <img class="w-10" src="media/previous.png" alt="Anterior" />
           <span>Anterior</span>
-        </nuxt-link>
-      </div>
-      <div>
-        <nuxt-link to="/">
-          <img src="media/home.png" alt="" />
-        </nuxt-link>
-      </div>
-      <div class="flex flex-col">
-        <div class="w-20 h-20 bg-gray-400 rounded-full mx-auto"></div>
+        </div>
+      </nuxt-link>
+      <nuxt-link to="/">
+        <img src="media/home.png" alt="" />
+      </nuxt-link>
+      <nuxt-link
+        :to="`/${nextVictim.slug}`"
+        class="mt-3 flex flex-col items-center font-lato font-bold"
+      >
+        <img
+          class="w-20 h-20 rounded-full object-center object-cover"
+          :src="nextVictim.enlace_imagen"
+          alt=""
+        />
         <p class="font-playfair text-center leading-tight mt-2">
           <span class="block">{{ nextVictim.Nombre }}</span>
           <span>{{ nextVictim.Apellidos }}</span>
         </p>
-        <nuxt-link
-          :to="`/${nextVictim.slug}`"
-          class="mt-3 flex items-center font-lato font-bold text-sizzling-red text-sm"
-        >
+        <div class="text-sm flex items-center text-sizzling-red mt-2">
           <span>Siguiente</span>
           <img class="w-10" src="media/next.png" alt="Anterior" />
-        </nuxt-link>
-      </div>
+        </div>
+      </nuxt-link>
     </div>
   </div>
 </template>
@@ -201,7 +205,7 @@ export default {
 }
 
 .md-content strong {
-  @apply font-bold
+  @apply font-bold;
 }
 
 .md-content blockquote {
@@ -209,10 +213,14 @@ export default {
 }
 
 .md-content h2 {
-  @apply font-playfair text-2xl text-center my-10;
+  @apply font-playfair text-2xl text-center my-10 italic font-bold;
 }
 
 .md-content h2 ~ * {
   @apply mt-6;
+}
+
+.md-content h3 {
+  @apply font-playfair text-xl font-bold;
 }
 </style>

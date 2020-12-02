@@ -42,6 +42,13 @@
   }
 
   @font-face {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-style: italic;
+    src: url(~assets/fonts/PlayfairDisplay-BoldItalic.ttf);
+  }
+
+  @font-face {
     font-family: Charter;
     font-weight: 400;
     src: url(~assets/fonts/Charter.ttf);
