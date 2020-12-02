@@ -31,11 +31,12 @@ export default {
     ],
   },
   router: {
+    base: '/ya-no-estoy-aqui/',
     prefetchLinks: false,
   },
   buildModules: ['@nuxtjs/tailwindcss' /* '@nuxtjs/google-analytics' */],
   generate: {
-    dir: 'docs',
+    dir: 'docs/ya-no-estoy-aqui',
     async routes() {
       const { victims } = await getData();
       return victims.map((v) => `/${v.slug}`);
