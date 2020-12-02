@@ -1,12 +1,17 @@
 <template>
   <div>
-    <transition name="photo">
+    <transition-group name="photo">
       <div
-        v-show="hovered"
+        v-for="victim in victims"
+        :key="victim.slug"
+        v-show="hovered && hovered.slug === victim.slug"
         class="fixed top-0 left-0 w-full h-full bg-center bg-contain bg-repeat-x"
-        :style="overlay"
+        :style="{
+          zIndex: -1,
+          backgroundImage: `radial-gradient(circle, rgba(0,0,0,0.6530987394957983) 0%, rgba(0,0,0,0.5550595238095238) 44%), url(${victim.enlace_imagen})`,
+        }"
       ></div>
-    </transition>
+    </transition-group>
     <IntroScreen />
     <section class="px-4 pb-6">
       <div class="max-w-lg mx-auto">
@@ -63,14 +68,6 @@ export default {
       hovered: null,
     };
   },
-  computed: {
-    overlay() {
-      return {
-        zIndex: -1,
-        backgroundImage: `radial-gradient(circle, rgba(0,0,0,0.6530987394957983) 0%, rgba(0,0,0,0.5550595238095238) 44%), url(media/daniela.jpg)`,
-      };
-    },
-  },
   methods: {
     onEnter(victim, index) {
       const children = Array.from(this.$refs.victims.children);
@@ -98,11 +95,8 @@ export default {
   opacity: 0;
 }
 
-.photo-enter-active {
-  transition: opacity 0.5s ease-out;
-}
-
+.photo-enter-active,
 .photo-leave-active {
-  transition: opacity 0.25s ease-in;
+  transition: all 0.4s ease-out;
 }
 </style>
