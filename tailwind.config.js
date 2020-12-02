@@ -16,7 +16,7 @@ module.exports = {
         'sizzling-red': '#ef5d60',
         'wild-blue-yonder': '#a8aace',
         platinum: '#e8e9eb',
-        'maximum-purple': '#6c3d7e',
+        purple: '#6c3d7e',
       },
       fontFamily: {
         lato: ['Lato', 'sans-serif'],

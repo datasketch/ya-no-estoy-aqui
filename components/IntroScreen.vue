@@ -12,7 +12,7 @@
         class="min-h-screen flex flex-col justify-center"
         style="margin-bottom: 50vh"
       >
-        <h1 class="text-8xl text-maximum-purple font-playfair leading-none text-center" style="color: #6c3d7e">
+        <h1 class="text-8xl text-purple font-playfair leading-none text-center" style="color: #6c3d7e">
           <span class="italic inline-flex relative">
             Ya no
             <span class="absolute w-full h-1 bg-red-500 bg-opacity-50 transform translate-y-1/2 top-1/2"></span>
@@ -62,7 +62,7 @@
             Mientras salimos del silencio, te invitamos a leer y a compartir en redes los in memoriam de mujeres que fueron valientes, amorosas, sonrientes.  Y si quieres contactarnos para reconstruir la historia de tu familiar y amiga, escríbenos al correo electrónico: <a href="mailto:yanoestoyaqui.cuestionpublica@gmail.com" class="text-sizzling-red">yanoestoyaqui.cuestionpublica@gmail.com</a>. Esta labor de búsqueda estará vigente hasta hacer de ellas las siemprevivas.
           </p>
           <p class="text-center">
-            <nuxt-link to="/metodologia" class="bg-sizzling-red px-3 py-2 inline-block rounded leading-none font-lato">Metodologia</nuxt-link>
+            <nuxt-link to="/metodologia" class="bg-sizzling-red px-3 py-2 inline-block rounded leading-none font-lato text-base">Metodologia</nuxt-link>
           </p>
         </div>
       </div>

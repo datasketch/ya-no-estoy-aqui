@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full mx-auto sm:max-w-lg text-platinum">
+  <div class="w-full mx-auto sm:max-w-xl text-platinum">
     <nav class="pt-2">
       <nuxt-link to="/" class="flex items-center text-sm">
         <svg
