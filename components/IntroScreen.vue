@@ -84,7 +84,7 @@ export default {
         step: ".step",
       })
       .onStepProgress(({ progress }) => {
-        this.$refs.wrapper.style.opacity = 1 - progress * 4;
+        this.$refs.wrapper.style.opacity = 1 - progress * 6;
       });
   },
 };

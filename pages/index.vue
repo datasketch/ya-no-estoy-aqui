@@ -41,7 +41,7 @@
         </ul>
       </div>
     </section>
-    <VCredits/>
+    <VCredits />
   </div>
 </template>
 

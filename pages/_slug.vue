@@ -1,24 +1,5 @@
 <template>
   <div class="w-full mx-auto sm:max-w-xl text-platinum">
-    <!-- <nav class="pt-2">
-      <nuxt-link to="/" class="flex items-center text-sm">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="w-6 stroke-current"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <line x1="5" y1="12" x2="19" y2="12" />
-          <line x1="5" y1="12" x2="9" y2="16" />
-          <line x1="5" y1="12" x2="9" y2="8" />
-        </svg>
-        <span>Volver al inicio</span>
-      </nuxt-link>
-    </nav> -->
     <img :src="victim.enlace_imagen" class="w-full md:w-56 mt-12 mx-auto" alt="">
     <div class="text-sizzling-red flex flex-col items-start relative mt-12">
       <p class="font-lato text-xl">{{ victim.Edad }} años</p>
@@ -38,7 +19,8 @@
     <p class="text-center my-6">* * *</p>
     <div class="font-charter text-lg" v-html="status"></div>
     <div class="text-center mt-12">
-      <div
+      <iframe v-if="victim.audio" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" :src="victim.audio"></iframe>
+      <!-- <div
         id="audio-player"
         ref="player"
         class="inline-flex items-center relative"
@@ -73,7 +55,7 @@
             alt="Volumen no activo"
           />
         </button>
-      </div>
+      </div> -->
     </div>
     <div
       class="w-2/3 border-t border-black mx-auto my-12 border-opacity-25"

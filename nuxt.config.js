@@ -34,7 +34,7 @@ export default {
     base: '/ya-no-estoy-aqui/',
     prefetchLinks: false,
   },
-  buildModules: ['@nuxtjs/tailwindcss' /* '@nuxtjs/google-analytics' */],
+  buildModules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-analytics'],
   generate: {
     dir: 'docs/ya-no-estoy-aqui',
     async routes() {
@@ -52,7 +52,7 @@ export default {
       },
     },
   },
-  /* googleAnalytics: {
+  googleAnalytics: {
     id: 'UA-115081321-1',
-  }, */
+  },
 };
