@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center text-platinum font-lato mt-12">
+  <div class="flex flex-col items-center text-platinum font-lato mt-12 max-w-lg mx-auto">
     <div class="h-16 border-sizzling-red border-r w-0"></div>
     <div
       class="leading-none text-center font-playfair text-4xl mt-4 font-medium"
@@ -73,7 +73,7 @@
           name="Carlos Alberto Cortés - In memoriam de Esther Asendra Salcedo"
         />
         <PersonCredit
-          name="Diana Patricia Castañeda Guerrero - In memoriam de Cidny Vanesa Piña Oyola"
+          name="Diana Patricia Castañeda Guerrero - In memoriam de Cidny Vanesa Piña Oyola y Katia Johana Ariza Macías"
         />
         <PersonCredit
           name="Andrés Felipe Lasprilla Paz - In memoriam de Meiby Beatriz Suescun Torres"

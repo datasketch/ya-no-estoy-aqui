@@ -45,14 +45,14 @@
         anhelo es que esos datos nos lleven a encontrar a sus familiares y así
         poder narrar sus historias.
       </p>
-      <p class="text-center">
+      <!-- <p class="text-center">
         <a
           href="https://docs.google.com/spreadsheets/d/1EDoBOrZIh2U58oMGdhz6nMDZSfTqjrQlSbGtKXNoexE/edit#gid=0"
           target="_blank"
           class="bg-sizzling-red px-3 py-2 inline-block rounded leading-none font-lato text-lg"
           >Descargar base de datos</a
         >
-      </p>
+      </p> -->
       <iframe
         title="Base de datos de víctimas de violencia feminicida (marzo 24 - agosto 31, 2020)"
         aria-label="chart"
