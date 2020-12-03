@@ -42,8 +42,8 @@ export default {
       return victims.map((v) => `/${v.slug}`);
     },
   },
-  // target: 'static',
-  ssr: false,
+  target: 'static',
+  ssr: true,
   build: {
     postcss: {
       plugins: {
