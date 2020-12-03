@@ -73,7 +73,7 @@
           name="Carlos Alberto Cortés - In memoriam de Esther Asendra Salcedo"
         />
         <PersonCredit
-          name="Diana Patricia Castañeda Guerrero - In memoriam de Cidny Vanesa Piña Oyola y Katia Johana Ariza Macías"
+          name="Diana Patricia Castañeda Guerrero - In memoriam de Cindy Vanesa Piña Oyola y Katia Johana Ariza Macías"
         />
         <PersonCredit
           name="Andrés Felipe Lasprilla Paz - In memoriam de Meiby Beatriz Suescun Torres"

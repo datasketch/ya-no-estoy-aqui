@@ -4,17 +4,17 @@
       <p class="font-lato text-xl text-platinum">Comparte</p>
       <ul class="flex items-center justify-center space-x-6">
         <li>
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a href="https://facebook.com/cuestionp/" target="_blank" rel="noopener noreferrer">
             <img src="media/fb.png" alt=""/>
           </a>
         </li>
         <li>
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a href="https://twitter.com/cuestion_p" target="_blank" rel="noopener noreferrer">
             <img src="media/tw.png" alt=""/>
           </a>
         </li>
         <li>
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/cuestionp/" target="_blank" rel="noopener noreferrer">
             <img src="media/ig.png" alt=""/>
           </a>
         </li>

@@ -131,8 +131,8 @@
 export default {
   head() {
     return {
-      title: 'Metodología'
-    }
-  }
-}
+      title: "Metodología",
+    };
+  },
+};
 </script>
