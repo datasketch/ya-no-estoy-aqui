@@ -54,14 +54,14 @@
         >
       </p> -->
       <iframe
-        title="Base de datos de víctimas de violencia feminicida (marzo 24 - agosto 31, 2020)"
+        title="Base de datos - Mujeres víctimas de violencia feminicida"
         aria-label="chart"
-        id="datawrapper-chart-RqOXs"
-        src="https://datawrapper.dwcdn.net/RqOXs/3/"
+        id="datawrapper-chart-3YDqF"
+        src="https://datawrapper.dwcdn.net/3YDqF/2/"
         scrolling="no"
         frameborder="0"
         style="width: 0; min-width: 100% !important; border: none"
-        height="1116"
+        height="1372"
       ></iframe>
       <script type="text/javascript">
         !(function () {
