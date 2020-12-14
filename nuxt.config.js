@@ -24,9 +24,14 @@ export default {
         content: 'width=device-width, initial-scale=1.0',
       },
       {
-        name: 'description',
-        content:
-          'Espacio en el que construimos In Memoriams  de las 237 mujeres víctimas de violencia feminicida, dentro del periodo en el que la cuarentena por COVID-19 fue más estricto en el país. Nos basamos en la metodología y casos presentados por el Observatorio de Feminicidios Colombia, al tiempo que buscamos a sus familiares y amigos para reconstruir los perfiles de ellas: las que ya no están.',
+        property: 'og:type',
+        content: 'website',
+        hid: 'og:type',
+      },
+      {
+        name: 'twitter:card',
+        content: 'summary_large_image',
+        hid: 'twitter:card',
       },
     ],
   },

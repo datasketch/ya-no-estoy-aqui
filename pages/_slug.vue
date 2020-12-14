@@ -1,6 +1,10 @@
 <template>
   <div class="w-full mx-auto sm:max-w-xl text-platinum">
-    <img :src="victim.enlace_imagen" class="w-full md:w-56 mt-12 mx-auto" alt="">
+    <img
+      :src="victim.enlace_imagen"
+      class="w-full md:w-56 mt-12 mx-auto"
+      alt=""
+    />
     <div class="text-sizzling-red flex flex-col items-start relative mt-12">
       <p class="font-lato text-xl">{{ victim.Edad }} años</p>
       <img
@@ -9,7 +13,9 @@
         style="top: 1rem; z-index: -1"
       />
       <div class="w-8 border-b border-sizzling-red"></div>
-      <h1 class="text-3xl md:text-5xl leading-tight font-playfair mt-2 font-extrabold">
+      <h1
+        class="text-3xl md:text-5xl leading-tight font-playfair mt-2 font-extrabold"
+      >
         <span class="block">{{ victim.Nombre }}</span>
         <span>{{ victim.Apellidos }}</span>
       </h1>
@@ -19,7 +25,15 @@
     <p class="text-center my-6">* * *</p>
     <div class="font-charter text-lg" v-html="status"></div>
     <div class="text-center mt-12">
-      <iframe v-if="victim.audio" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" :src="victim.audio"></iframe>
+      <iframe
+        v-if="victim.audio"
+        width="100%"
+        height="166"
+        scrolling="no"
+        frameborder="no"
+        allow="autoplay"
+        :src="victim.audio"
+      ></iframe>
       <!-- <div
         id="audio-player"
         ref="player"
@@ -107,6 +121,7 @@
 <script>
 import MarkdownIt from "markdown-it";
 import { getData } from "~/api";
+import meta from "~/meta";
 
 export default {
   async asyncData({ params }) {
@@ -129,6 +144,7 @@ export default {
   head() {
     return {
       title: this.victim.fullname,
+      meta: [...meta(this.victim.fullname, null, this.victim.enlace_imagen)],
     };
   },
   data() {

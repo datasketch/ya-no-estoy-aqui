@@ -50,11 +50,19 @@ import VictimItem from "~/components/VictimItem";
 import IntroScreen from "~/components/IntroScreen";
 import VCredits from "~/components/VCredits";
 import { getData } from "~/api";
+import meta from "~/meta";
+
+const tags = meta(
+  "Ya no estoy aquí",
+  null,
+  "https://res.cloudinary.com/randommonkey/image/upload/v1607954780/ya-no-estoy-aqui/cover.png"
+);
 
 export default {
   head() {
     return {
       title: "Ya no estoy aquí",
+      meta: [...tags],
     };
   },
   components: { VictimItem, IntroScreen, VCredits },

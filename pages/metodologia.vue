@@ -28,9 +28,9 @@
       <p>
         Partimos de la construcción de una base de datos de víctimas de
         violencia feminicida, que comprende desde el 24 de marzo hasta el 31 de
-        agosto, meses en los que la cuarentena por COVID-19 fueron más estrictos
-        en el país, de acuerdo con los decretos de emergencia que obligaron a
-        toda la población a estar aislada obligatoriamente.
+        agosto, meses en los que la cuarentena por COVID-19 fue más estricta en
+        el país, de acuerdo con los decretos de emergencia que obligaron a toda
+        la población a estar aislada obligatoriamente.
       </p>
       <p>
         Nos apoyamos en el Observatorio de Feminicidios y en la labor de medios
@@ -85,31 +85,32 @@
       <p>
         Hay otros casos en el que el homicidio fue producto de un robo, una bala
         perdida en medio de enfrentamientos, cuentas de cobro en las que ellas
-        terminaron siendo víctimas por razones casi del azar. Por tanto
-        generaron debate al interior del equipo periodístico si era convenientes
-        etiquetarlos como feminicidios. Los incluimos por dos razones poderosas:
-        por provenir del Observatorio de feminicidios, metodología a la cual
-        suscribimos y porque, en últimas, a esas mujeres también las rodea el
-        silencio, el anonimato, la injusticia y la violencia feminicida.
+        terminaron siendo víctimas por razones casi del azar. Esto generó debate
+        al interior del equipo periodístico. Nos preguntarnos si era conveniente
+        etiquetarlos como feminicidios, pero los incluimos por dos razones
+        poderosas: por provenir del Observatorio de Feminicidios, metodología a
+        la cual suscribimos y porque, en últimas, a esas mujeres también las
+        rodea el silencio, el anonimato, la injusticia y la violencia
+        feminicida.
       </p>
       <p>
         La justicia es y será un tema de Fiscalía, jueces y tribunales. Por
         tanto, el foco estará puesto en ellas y quiénes fueron.
       </p>
       <p>
-        <span class="font-bold"
-          >Técnica y tratamiento de los perfiles
-          <span class="font-playfair italic">in memoriam</span>:</span
-        >
+        <span class="font-bold">
+          Técnica y tratamiento de los perfiles
+          <span class="font-playfair italic">in memoriam</span>:
+        </span>
         cada historia fue construida a partir de una búsqueda de familiares y
         amigos de las víctimas de feminicidios. Esta labor fue realizada a
-        través de reportería y una campaña en redes sociales de Cuestión
-        Pública, tuvo como fecha de arranque el 18 de noviembre del 2020. A
-        través de post expusimos algunos casos de feminicidio, con el fin de
-        encontrar personas y familiares cercanas a las víctimas, en los que le
-        contamos de nuestra intención de homenaje. Así mismo, les pedimos que
-        nos contacten a través de un correo electrónico especial, que diera paso
-        a la construcción del perfil in memoriam.
+        través de reportería y una campaña en las redes sociales de Cuestión
+        Pública, que tuvo como fecha de arranque el 18 de noviembre del 2020. A
+        través de post expusimos algunos casos de feminicidio y les contamos de
+        nuestra intención de homenaje a las víctimas. Así mismo, les pedimos que
+        nos contactaran a través del correo electrónico
+        yanoestoyaqui.cuestionpublica@gmail.com, que diera paso a la
+        construcción del perfil <span class="italic">in memoriam</span>.
       </p>
       <p>
         Una vez aceptaban construir las historias, éstas se obtenían a través de
