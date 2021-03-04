@@ -16,7 +16,7 @@
           Coordinación y Edición
         </h3>
         <PersonCredit name="Diana Salinas" />
-        <PersonCredit name="Ingrid Ramírez" twitter="_iramir_" />
+        <PersonCredit name="Ingrid Ramírez Fuquen" twitter="_iramir_" />
       </div>
       <div class="text-2xl text-center">
         <h3 class="font-charter text-wild-blue-yonder">Edición jurídica</h3>
@@ -38,6 +38,7 @@
         <PersonCredit name="Diana Salinas" />
         <PersonCredit name="Antonia Montoya Castaño" />
         <PersonCredit name="María Angélica García Puerto" />
+        <PersonCredit name="Ingrid Ramírez Fuquen" />
       </div>
       <div class="text-2xl text-center">
         <h3 class="font-charter text-wild-blue-yonder">Base de datos</h3>

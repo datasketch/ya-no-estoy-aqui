@@ -4,11 +4,16 @@
     @mouseenter="$emit('enter')"
     @mouseleave="$emit('leave')"
   >
-    <nuxt-link :to="`/${victim.slug}`" :title="victim.fullname" class="block font-extrabold">
+    <nuxt-link
+      :to="`/${victim.slug}`"
+      :title="victim.fullname"
+      class="block font-extrabold"
+    >
+      <img class="md:hidden mx-auto mb-4" :src="victim.enlace_imagen" alt="" />
       <span class="block text-white">{{ victim.fullname }}</span>
-      <span class="text-platinum text-opacity-75"
-        >{{ victim["Edad"] }} años</span
-      >
+      <span class="text-platinum text-opacity-75">
+        {{ victim["Edad"] }} años
+      </span>
     </nuxt-link>
   </li>
 </template>
