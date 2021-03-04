@@ -51,6 +51,7 @@ import IntroScreen from "~/components/IntroScreen";
 import VCredits from "~/components/VCredits";
 import { getData } from "~/api";
 import meta from "~/meta";
+import { mapMutations } from "vuex";
 
 const tags = meta(
   "Ya no estoy aquí",
@@ -66,11 +67,12 @@ export default {
     };
   },
   components: { VictimItem, IntroScreen, VCredits },
-  async asyncData() {
+  async asyncData({ store }) {
     const { victims, error } = await getData();
     if (error !== null) {
       console.log(error);
     }
+    store.commit("setProfile", { profile: null });
     return {
       victims,
     };
@@ -81,6 +83,7 @@ export default {
     };
   },
   methods: {
+    ...mapMutations(["setProfile"]),
     onEnter(victim, index) {
       const children = Array.from(this.$refs.victims.children);
       children.forEach((child) => child.classList.add("faded"));
@@ -92,6 +95,9 @@ export default {
       children.forEach((child) => child.classList.remove("faded"));
       this.hovered = null;
     },
+  },
+  mounted() {
+    this.setProfile({ profile: null });
   },
 };
 </script>

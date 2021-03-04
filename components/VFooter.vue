@@ -4,22 +4,60 @@
       <p class="font-lato text-xl text-platinum">Comparte</p>
       <ul class="flex items-center justify-center space-x-6">
         <li>
-          <a href="https://facebook.com/cuestionp/" target="_blank" rel="noopener noreferrer">
-            <img src="media/fb.png" alt=""/>
+          <a
+            href="https://facebook.com/cuestionp/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="media/fb.png" alt="" />
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/cuestion_p" target="_blank" rel="noopener noreferrer">
-            <img src="media/tw.png" alt=""/>
+          <a :href="shareTw" target="_blank" rel="noopener noreferrer">
+            <img src="media/tw.png" alt="" />
           </a>
         </li>
-        <li>
-          <a href="https://www.instagram.com/cuestionp/" target="_blank" rel="noopener noreferrer">
-            <img src="media/ig.png" alt=""/>
+        <li v-if="!profile">
+          <a
+            href="https://www.instagram.com/cuestionp/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="media/ig.png" alt="" />
           </a>
         </li>
       </ul>
     </div>
-    <img class="mt-12 mx-auto w-2/3 md:w-64" src="media/heinrich-boll-stiftung.png" alt="">
+    <img
+      class="mt-12 mx-auto w-2/3 md:w-64"
+      src="media/heinrich-boll-stiftung.png"
+      alt=""
+    />
   </footer>
 </template>
+
+<script>
+import { mapState } from "vuex";
+
+export default {
+  name: "VFooter",
+  computed: {
+    ...mapState(["profile"]),
+    shareURL() {
+      if (!this.profile) {
+        return '';
+      }
+      return `https://cuestionpublica.com/ya-no-estoy-aqui/${this.profile.slug}`
+    },
+    shareText() {
+      return `In memoriam: ${this.profile.fullname}`;
+    },
+    shareTw() {
+      if (!this.profile) {
+        return "https://twitter.com/cuestion_p";
+      }
+      return `https://twitter.com/intent/tweet?text=${this.shareText}&url=${this.shareURL}&via=cuestionp`;
+    },
+  },
+};
+</script>

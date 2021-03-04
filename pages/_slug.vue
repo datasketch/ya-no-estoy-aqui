@@ -124,7 +124,7 @@ import { getData } from "~/api";
 import meta from "~/meta";
 
 export default {
-  async asyncData({ params }) {
+  async asyncData({ params, store }) {
     const { victims, error } = await getData();
     if (error !== null) {
       console.log(error);
@@ -135,6 +135,7 @@ export default {
       index - 1 < 0 ? victims[victims.length - 1] : victims[index - 1];
     const nextVictim =
       index + 1 >= victims.length ? victims[0] : victims[index + 1];
+    store.commit("setProfile", { profile: victim });
     return {
       victim,
       previousVictim,
