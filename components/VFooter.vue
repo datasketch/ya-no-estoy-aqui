@@ -4,11 +4,7 @@
       <p class="font-lato text-xl text-platinum">Comparte</p>
       <ul class="flex items-center justify-center space-x-6">
         <li>
-          <a
-            href="https://facebook.com/cuestionp/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a :href="shareFb" target="_blank" rel="noopener noreferrer">
             <img src="media/fb.png" alt="" />
           </a>
         </li>
@@ -45,9 +41,9 @@ export default {
     ...mapState(["profile"]),
     shareURL() {
       if (!this.profile) {
-        return '';
+        return "";
       }
-      return `https://cuestionpublica.com/ya-no-estoy-aqui/${this.profile.slug}`
+      return `https://cuestionpublica.com/ya-no-estoy-aqui/${this.profile.slug}`;
     },
     shareText() {
       return `In memoriam: ${this.profile.fullname}`;
@@ -57,6 +53,12 @@ export default {
         return "https://twitter.com/cuestion_p";
       }
       return `https://twitter.com/intent/tweet?text=${this.shareText}&url=${this.shareURL}&via=cuestionp`;
+    },
+    shareFb() {
+      if (!this.profile) {
+        return "https://facebook.com/cuestionp/";
+      }
+      return `https://www.facebook.com/sharer/sharer.php?u=${this.shareURL}`;
     },
   },
 };
