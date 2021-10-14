@@ -34,42 +34,6 @@
         allow="autoplay"
         :src="victim.audio"
       ></iframe>
-      <!-- <div
-        id="audio-player"
-        ref="player"
-        class="inline-flex items-center relative"
-        role="region"
-        aria-label="Reproductor de audio"
-      >
-        <button
-          @click="togglePlay"
-          class="focus:outline-none w-16"
-          :title="paused ? 'Reproducir audio' : 'Pausar audio'"
-        >
-          <img v-show="paused" src="media/play.png" alt="Reproducir" />
-          <img v-show="!paused" src="media/pause.png" alt="Pausar" />
-        </button>
-        <div class="font-lato leading-tight px-2">
-          <p class="text-wild-blue-yonder">
-            Escucha el <strong>In Memoriam</strong>
-          </p>
-          <p class="text-sizzling-red">
-            <strong>{{ victim.fullname }}</strong>
-          </p>
-        </div>
-        <button
-          @click="toggleSound"
-          class="focus:outline-none w-10"
-          :title="muted ? 'Activar sonido' : 'Desactivar sonido'"
-        >
-          <img v-show="!muted" src="media/sound-on.png" alt="Volumen activo" />
-          <img
-            v-show="muted"
-            src="media/sound-off.png"
-            alt="Volumen no activo"
-          />
-        </button>
-      </div> -->
     </div>
     <div
       class="w-2/3 border-t border-black mx-auto my-12 border-opacity-25"
