@@ -1,13 +1,10 @@
-import GSheetReader from '@ddazal/gsheetreader';
 import slugify from 'slugify';
-
-const id = '1EDoBOrZIh2U58oMGdhz6nMDZSfTqjrQlSbGtKXNoexE';
 
 async function getData() {
   try {
-    const reader = new GSheetReader();
-    const results = await reader.getJSON(id);
-    const victims = results.data
+    const response = await fetch('https://script.google.com/macros/s/AKfycbywq9AJvYXrR4d2IVY9NFM3F2QBzGZN2_LPdAU8Y4hUfmiU8jJvm72XVO-YREDlilt7/exec')
+    const { data } = await response.json()
+    const victims = data.dataviz
       .filter((victim) => victim.visible === 1)
       .map((victim) => ({
         fullname: `${victim['Nombre']} ${victim['Apellidos']}`.trim(),
