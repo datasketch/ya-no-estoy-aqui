@@ -23,7 +23,7 @@
     <!-- In memoriam -->
     <div class="md-content" v-html="inMemoriam"></div>
     <p class="text-center my-6">* * *</p>
-    <div class="font-charter text-lg" v-html="status"></div>
+    <div class="md-content mt-0" v-html="status"></div>
     <div class="text-center mt-12">
       <iframe
         v-if="victim.audio"
