@@ -23,7 +23,7 @@
     <!-- In memoriam -->
     <div class="md-content" v-html="inMemoriam"></div>
     <p class="text-center my-6">* * *</p>
-    <div class="md-content mt-0" v-html="status"></div>
+    <div class="md-status-content" v-html="status"></div>
     <div class="text-center mt-12">
       <iframe
         v-if="victim.audio"
@@ -159,8 +159,16 @@ export default {
   z-index: -1;
 }
 
-.md-content {
+.md-content, .md-status-content {
   @apply text-lg font-charter mt-12;
+}
+
+.md-status-content {
+  @apply mt-0;
+}
+
+.md-status-content > * ~ * {
+  @apply mt-6;
 }
 
 .md-content a {
@@ -188,7 +196,7 @@ export default {
 }
 
 @screen md {
-  .md-content {
+  .md-content, .md-status-content {
     @apply text-xl;
   }
 }
