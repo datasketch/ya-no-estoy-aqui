@@ -122,7 +122,9 @@ export default {
     };
   },
   created() {
-    const md = new MarkdownIt();
+    const md = new MarkdownIt({
+      html: true
+    });
     this.inMemoriam = md.render(this.victim.texto_in_memoriam);
     this.status = md.render(this.victim.estado_proceso);
   },
