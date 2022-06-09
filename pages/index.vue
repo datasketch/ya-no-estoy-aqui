@@ -31,6 +31,7 @@
           class="flex flex-col items-start space-y-16 mt-12 font-playfair text-xl lg:text-2xl"
           ref="victims"
         >
+          <li class="hidden">1</li>
           <VictimItem
             v-for="(victim, i) in victims"
             :key="victim.slug"

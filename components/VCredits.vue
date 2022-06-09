@@ -26,6 +26,9 @@
         <h3 class="font-charter text-wild-blue-yonder">
           Reportería e investigación
         </h3>
+        <PersonCredit name="Daneisi Rubio" twitter="Dane_rubior" />
+        <PersonCredit name="Paula Molina" twitter="Paulaaml1" />
+        <PersonCredit name="Alejandra Ovalle" twitter="_Azuleja" />
         <PersonCredit
           name="Antonia Montoya Castaño"
           twitter="antoniamontoyac"
@@ -36,14 +39,17 @@
       <div class="text-2xl text-center">
         <h3 class="font-charter text-wild-blue-yonder">Textos</h3>
         <PersonCredit name="Diana Salinas" />
+        <PersonCredit name="Daneisi Rubio" />
+        <PersonCredit name="Paula Molina" />
+        <PersonCredit name="Alejandra Ovalle" />
+        <PersonCredit name="Ingrid Ramírez Fuquen" />
         <PersonCredit name="Antonia Montoya Castaño" />
         <PersonCredit name="María Angélica García Puerto" />
-        <PersonCredit name="Ingrid Ramírez Fuquen" />
       </div>
       <div class="text-2xl text-center">
         <h3 class="font-charter text-wild-blue-yonder">Base de datos</h3>
+        <PersonCredit name="Ingrid Ramírez Fuquen" />
         <PersonCredit name="María Angélica García Puerto" />
-        <PersonCredit name="Ingrid Ramírez" />
       </div>
       <div class="text-2xl text-center">
         <h3 class="font-charter text-wild-blue-yonder">Diseño</h3>
